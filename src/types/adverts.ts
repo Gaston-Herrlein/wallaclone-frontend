@@ -1,15 +1,15 @@
 export interface Anuncio {
   _id: string;
-  nombre: string;
+  name: string;
   imagen: string;
-  descripcion: string;
-  precio: number;
-  tipoAnuncio: 'venta' | 'búsqueda';
+  description: string;
+  price: number;
+  typeAdvert: 'venta' | 'búsqueda';
   tags: string[];
-  autor: { _id: string; nombre: string };
-  fechaPublicacion: string;
+  author: { _id: string; name: string; email: string };
+  publicationDate: string;
   slug: string;
-  estado: StatusAnuncio;
+  state: StatusAnuncio;
 }
 
 export interface AnunciosResponse {
