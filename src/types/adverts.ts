@@ -13,7 +13,7 @@ export interface Anuncio {
 }
 
 export interface AnunciosResponse {
-  anuncios: Anuncio[];
+  adverts: Anuncio[];
   total: number;
   page: number;
   totalPages: number;
@@ -33,16 +33,16 @@ export interface IAdvertsFilters {
   tipoAnuncio?: string;
   precioMin?: string;
   precioMax?: string;
-	sort?: Sort;
-};
+  sort?: Sort;
+}
 
 export const initialFilterValues: IAdvertsFilters = {
-	searchTerm: '',
-	tags: [], 
-	tipoAnuncio: '', 
-	precioMin: '', 
-	precioMax: '',
-	sort: undefined,
+  searchTerm: '',
+  tags: [],
+  tipoAnuncio: '',
+  precioMin: '',
+  precioMax: '',
+  sort: undefined,
 };
 
 export type StatusAnuncio = 'disponible' | 'reservado' | 'vendido';
